@@ -19,8 +19,8 @@ function Navbar({ changeTheme, theme }) {
                     <a href="#home" className=''>Home</a>
                     <a href="#about" className=''>About</a>
                     <a href="#project" className=''>Projects</a>
-                    <a href="" className=''>Skills</a>
-                    <a href="" className=''>Contact</a>
+                    <a href="#skills" className=''>Skills</a>
+                    <a href="#contact" className=''>Contact</a>
                 </div>
                 <div className='md:hidden'>
                     {
@@ -30,8 +30,8 @@ function Navbar({ changeTheme, theme }) {
                                     <a href="#home" className=''>Home</a>
                                     <a href="#about" className=''>About</a>
                                     <a href="#project" className=''>Projects</a>
-                                    <a href="" className=''>Skills</a>
-                                    <a href="" className=''>Contant</a>     
+                                    <a href="#skills" className=''>Skills</a>
+                                    <a href="#contact" className=''>Contant</a>     
                                 </div>
                                 <div className='absolute  right-14 top-3'>
                                     <FaTimes onClick={showMenu} className='hover:cursor-pointer' size={27} />
