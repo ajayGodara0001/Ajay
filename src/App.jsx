@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Navbar from './components/navbar'
 import Home from './components/home'
 import About from './components/about'
-import Project from './components/project'
+import Projects from './components/projects'
 function App() {
   let [theme, setTheme] = useState("black")
   const changeTheme = () =>{
@@ -20,7 +20,7 @@ function App() {
           <Navbar changeTheme={changeTheme} theme={theme}/>
           <Home theme={theme} />
           <About theme={theme} />
-          <Project />
+          <Projects theme={theme}/>
         </div>
       )
 }

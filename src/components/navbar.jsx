@@ -29,7 +29,7 @@ function Navbar({ changeTheme, theme }) {
                                 <div className='flex flex-col gap-5 '>
                                     <a href="#home" className=''>Home</a>
                                     <a href="#about" className=''>About</a>
-                                    <a href="project" className=''>Projects</a>
+                                    <a href="#project" className=''>Projects</a>
                                     <a href="" className=''>Skills</a>
                                     <a href="" className=''>Contant</a>     
                                 </div>
