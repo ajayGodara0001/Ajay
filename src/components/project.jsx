@@ -1,6 +1,5 @@
 import React from 'react'
 
-<<<<<<< HEAD
 function Project({pName, pInfo, tech , imgUrl, theme}) {
   return (
      
@@ -23,14 +22,4 @@ function Project({pName, pInfo, tech , imgUrl, theme}) {
 }
 
 export default Project
-=======
-function Project() {
-  return (
-    <div className='h-3screen w-full' id="project">
-      
-    </div>
-  )
-}
 
-export default Project
->>>>>>> 8df6b7f6c6683e0c924c0f3a0852ec247d647826
