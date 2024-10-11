@@ -1,4 +1,5 @@
 import React from 'react'
+import { TypeAnimation } from 'react-type-animation';
 
 function Home({ theme }) {
     return (
@@ -8,7 +9,19 @@ function Home({ theme }) {
             </div>
             <div className={`mt-4 text-3xl font-bold flex flex-col gap-1 items-center ${theme === "black" ? "text-white" : "text-black"}`}>
                 <p>Hi, I am <span className='text-blue-700'>Ajay</span></p>
-                <p>Full Stack Developer</p>
+                <TypeAnimation
+                        sequence={[
+                            // Same substring at the start will only be typed out once, initially
+                            'Frontend Developer',
+                            1000, // wait 1s before replacing "Mice" with "Hamsters"
+                            'Backend Developer',
+                            1000,
+                        ]}
+                        // wrapper="span"
+                        speed={10}
+                        // style={{ fontSize: '1em', display: 'inline-block' }}
+                        repeat={Infinity}
+                />
             </div>
             <div className='text-white mt-5 '>
                 <button className='bg-blue-700 text-lg py-2 px-4 rounded-lg hover:bg-blue-950'>View My Resume</button>
