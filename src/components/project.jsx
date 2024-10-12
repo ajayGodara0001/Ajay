@@ -3,7 +3,7 @@ import React from 'react'
 function Project({pName, pInfo, tech , imgUrl, theme, liveLink, gitLink}) {
   return (
      
-    <div className={` rounded-xl lg:w-[500px] lg:max-h-[500px] md:max-w-[400px] md:max-h-[500px] w-[350px] max-h-[500px] shadow-lg  ${theme === "black" ? "text-white" : "text-black"}  ${theme === "black" ? "bg-slate-900" : "shadow-gray-400"} `}>
+    <div className={` rounded-xl lg:w-[500px] lg:min-h-[404px] md:max-w-[400px] md:max-h-[500px] w-[350px] max-h-[500px] shadow-lg  ${theme === "black" ? "text-white" : "text-black"}  ${theme === "black" ? "bg-slate-900" : "shadow-gray-400"} `}>
     <div>
       <div className='text-blue-800 pl-5 pt-2 text-xl font-bold'>{pName}</div>
       <div className=' pl-5 pt-2 pr-2 font-medium'>{pInfo}</div>

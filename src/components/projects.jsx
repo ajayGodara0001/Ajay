@@ -11,17 +11,13 @@ function Projects({theme}) {
       <div className='grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
 
       
-       <Project pName="Project Name" pInfo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga. Reiciendis ullam explicabo molestias amenda dolore! " tech="Tailwind, React, JavaScript" imgUrl={"p1.png"} theme={theme} 
+       <Project pName="Portfolio" pInfo="This is my Portfolio Project, It includes About me, My Projects and My Skills" tech="Tailwind, React, JavaScript" imgUrl={"p1.png"} theme={theme} 
        liveLink={"https://ajaygodaraportfolio.vercel.app/"} gitLink={"https://github.com/ajayGodara0001/Ajay"}/>
       
        <Project pName="Project Name" pInfo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga. Reiciendis ullam explicabo molestias amenda dolore! " tech="Tailwind, React, JavaScript" imgUrl={"p1.png"}  theme={theme}
        liveLink={"https://ajaygodaraportfolio.vercel.app/"} gitLink={"https://github.com/ajayGodara0001/Ajay"}/>
       
-       <Project pName="Project Name" pInfo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga. Reiciendis ullam explicabo molestias amenda dolore! " tech="Tailwind, React, JavaScript" imgUrl={"p1.png"}  theme={theme}
-       liveLink={"https://ajaygodaraportfolio.vercel.app/"} gitLink={"https://github.com/ajayGodara0001/Ajay"}/>
       
-       <Project pName="Project Name" pInfo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga. Reiciendis ullam explicabo molestias amenda dolore! " tech="Tailwind, React, JavaScript"imgUrl={"p1.png"}  theme={theme}
-       liveLink={"https://ajaygodaraportfolio.vercel.app/"} gitLink={"https://github.com/ajayGodara0001/Ajay"}/>
       
        <Project pName="Project Name" pInfo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga. Reiciendis ullam explicabo molestias amenda dolore! " tech="Tailwind, React, JavaScript"imgUrl={"p1.png"} theme={theme}
        liveLink={"https://ajaygodaraportfolio.vercel.app/"} gitLink={"https://github.com/ajayGodara0001/Ajay"}/>
