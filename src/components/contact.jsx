@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Contact({theme}) {
+   
   return (
     <div className='w-full pt-28   flex flex-col items-center' id="contact">
             <div className='text-4xl font-bold mb-16 text-blue-800 '>Contact Me</div>

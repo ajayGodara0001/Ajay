@@ -3,6 +3,8 @@ import Skill from './skill'
 
 function SKills({ theme }) {
     const ftech = ["HTML", "CSS", "JAVASCRIPT", "REACT","TAILWIND"]
+    const btech = ["EXPRESS", "MONGODB", "NODE JS"]
+    const tool = ["GITHUB"]
     return (
         <div className='w-full pt-28   flex flex-col items-center' id="skills">
 
@@ -12,10 +14,8 @@ function SKills({ theme }) {
 
                    
                 <Skill theme={theme} sName={"Frontend"} elements={ftech} />
-                <Skill theme={theme} sName={"Frontend"} elements={ftech} />
-                <Skill theme={theme} sName={"Frontend"} elements={ftech} />
-                <Skill theme={theme} sName={"Frontend"} elements={ftech} />
-                <Skill theme={theme} sName={"Frontend"} elements={ftech} />
+                <Skill theme={theme} sName={"Backend"} elements={btech} />
+                <Skill theme={theme} sName={"Tools"} elements={tool} />
 
 
                   
