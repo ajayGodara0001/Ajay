@@ -27,7 +27,7 @@ function Contact({theme}) {
         event.target.reset();
     } else {
         console.log("Error", data);
-        setResult(data.message);
+        setResult("Send Message");
         toast.error(data.message)
       }
     };
