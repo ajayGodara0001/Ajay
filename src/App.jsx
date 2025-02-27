@@ -1,4 +1,5 @@
 import './App.css'
+import { Toaster } from 'react-hot-toast';
 import React, { useState } from 'react'
 import Navbar from './components/navbar'
 import Home from './components/home'
@@ -27,6 +28,7 @@ function App() {
           <SKills theme={theme} />
           <Contact theme={theme} />
           <Fotter theme={theme}/>
+          <Toaster/>
         </div>
       )
 }
