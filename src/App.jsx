@@ -21,7 +21,7 @@ function App() {
   return (
         <div className="font-poppins"
         style={{backgroundColor:theme }  }>
-      
+       <div id="home" className="absolute top-0"></div>
           
           <Navbar changeTheme={changeTheme} theme={theme}/>
           <Home theme={theme} />

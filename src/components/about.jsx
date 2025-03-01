@@ -3,7 +3,7 @@ import React from 'react';
 function About({ theme }) {
   return (
     <div
-      className={`w-full h-fit px-4 flex flex-col items-center pt-20 ${
+      className={`w-full h-fit mt-[100vh] px-4 flex flex-col items-center pt-20 ${
         theme === 'black' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'
       }`}
       id="about"

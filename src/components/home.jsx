@@ -4,8 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 function Home({ theme }) {
   return (
     <div
-      className={`flex justify-center items-center flex-col h-screen ${theme === 'black' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}
-      id='home'
+      className={`flex fixed top-0 -z-10 left-0 right-0 justify-center items-center flex-col h-screen ${theme === 'black' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}
     >
       {/* Profile Image */}
       <div className='size-32 md:size-60 rounded-full bg-green-300 overflow-hidden border-4 border-blue-300'>

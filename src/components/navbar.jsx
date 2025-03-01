@@ -12,7 +12,7 @@ function Navbar({ changeTheme, theme }) {
   };
 
   return (
-    <div className='bg-slate-900 dark:bg-gray-800 w-full h-[fit] py-3 pl-7 pr-5 fixed text-slate-50 z-50 dark:text-gray-100 text-lg font-semibold shadow-md shadow-slate-400 dark:shadow-gray-700'>
+    <div className='bg-slate-900 dark:bg-gray-800 w-full h-[fit] py-3 pl-7 pr-5 fixed top-0 text-slate-50 z-50 dark:text-gray-100 text-lg font-semibold shadow-md shadow-slate-400 dark:shadow-gray-700'>
       <div className='flex justify-between'>
         {/* Desktop Menu */}
         <div className='md:flex justify-between xl:w-[35%] lg:w-[45%] md:w-[50%] hidden'>
