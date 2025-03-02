@@ -30,7 +30,8 @@ function Contact({ theme }) {
   };
 
   return (
-    <div className={`w-full pt-28 flex pb-10 flex-col items-center ${theme === 'black' ? 'bg-gray-900' : 'bg-gray-100'}`} id="contact">
+    <div 
+    className={`w-full pt-28 flex pb-10 flex-col items-center ${theme === 'black' ? 'bg-gray-900' : 'bg-gray-100'}`} id="contact">
       {/* Contact Me Heading */}
       <div className={`text-4xl font-bold mb-16 ${theme === 'black' ? 'text-blue-500' : 'text-blue-800'}`}>
         Contact Me

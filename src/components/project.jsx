@@ -3,6 +3,7 @@ import React from 'react';
 function Project({ pName, pInfo, tech, imgUrl, theme, liveLink, gitLink }) {
   return (
     <div
+    data-aos="zoom-in-up"
     className={`z-0 rounded-xl lg:w-[500px] lg:min-h-[404px] md:max-w-[400px] md:max-h-[500px] w-[350px] max-h-[500px] shadow-lg ${
       theme === 'black' ? 'bg-gray-800 text-white' : 'bg-white text-black shadow-gray-400'
     } transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_0_rgba(59,130,246,0.5)] hover:-rotate-2 hover:translate-y-2 hover:border-2 hover:border-blue-500`}

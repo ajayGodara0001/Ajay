@@ -7,7 +7,7 @@ function Home({ theme }) {
       className={`flex fixed top-0 -z-10 left-0 right-0 justify-center items-center flex-col h-screen ${theme === 'black' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}
     >
       {/* Profile Image */}
-      <div className='size-32 md:size-60 rounded-full bg-green-300 overflow-hidden border-4 border-blue-300'>
+      <div className='size-32  md:size-60 rounded-full bg-green-300 overflow-hidden border-4 border-blue-300'>
         <img
           className="w-full h-full rounded-full object-cover"
           src="ajay.jpg"
