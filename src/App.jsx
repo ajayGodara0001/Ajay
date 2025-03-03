@@ -1,6 +1,6 @@
 import './App.css'
 import { Toaster } from 'react-hot-toast';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from './components/navbar'
 import Home from './components/home'
 import About from './components/about'
@@ -18,6 +18,10 @@ function App() {
           setTheme("black")
       }
   }
+  useEffect(() => {
+    AOS.init({ once: false }); // Initialize AOS
+    AOS.refresh(); // Refresh AOS when the theme changes
+  }, [theme]);
   return (
         <div className="font-poppins"
         style={{backgroundColor:theme }  }>
