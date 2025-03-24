@@ -1,44 +1,60 @@
 import React from 'react';
+import Project from './project';
 
-function Project({ pName, pInfo, tech, imgUrl, theme, liveLink, gitLink }) {
+function Projects({ theme }) {
+
+  
+
   return (
-    <div
-  // data-aos="zoom-in-up"
-      className={`z-0 rounded-xl w-[300px] h-[500px] shadow-lg flex flex-col justify-between overflow-hidden transition-transform duration-500 transform-gpu ${
-        theme === 'black' ? 'bg-gray-800 text-white' : 'bg-white text-black shadow-gray-400'
-      } hover:scale-105  hover:shadow-[0_20px_30px_rgba(0,0,0,0.2)] hover:-translate-y-4 hover:border-2 hover:border-blue-500`}
-    >
-      {/* Project Image */}
-      <div className='p-2'>
-        <img className='h-44 w-full object-cover rounded-lg border-2 border-gray-300' src={imgUrl} alt="project" />
+    <div className={`w-full pt-28 flex flex-col items-center ${theme === 'black' ? 'bg-gray-900' : 'bg-gray-100'}`} id="project">
+      {/* Projects Heading */}
+      <div className={`text-4xl font-bold mb-16 ${theme === 'black' ? 'text-blue-500' : 'text-blue-800'}`}>
+        Projects
       </div>
 
-      <div className='p-5 flex flex-col justify-between flex-grow'>
-        {/* Project Name */}
-        <h3 className={`text-2xl font-bold ${theme === 'black' ? 'text-blue-500' : 'text-blue-800'}`}>{pName}</h3>
-        
-        {/* Project Info */}
-        <p className='pt-1 text-sm font-medium flex-grow'>{pInfo}</p>
+      {/* Projects Grid */}
+      <div className='grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  grid-cols-1 gap-10 items-center'>
+        <Project
+          pName="Portfolio"
+          pInfo="This is my Portfolio Project, It includes About me, My Projects and My Skills"
+          tech="Tailwind, React, JavaScript"
+          imgUrl="p1.png"
+          theme={theme}
+          liveLink="https://ajaygodaraportfolio.vercel.app/"
+          gitLink="https://github.com/ajayGodara0001/Ajay"
+        />
+        <Project
+          pName="Shoping Website"
+          pInfo="This is a shopping website, here authentication system available and payment gateway or my order section also"
+          tech="Tailwind, React, JavaScript, Mongoose, Express, Node"
+          imgUrl="image.png"
+          theme={theme}
+          liveLink="https://suds.vercel.app/"
+          gitLink="https://github.com/ajayGodara0001/suds"
+        />
+        <Project
+          pName="All Country Info"
+          pInfo="This website gives you information about all nations of the world like their Capital, Population, currency, border country. Here I use an API for all information."
+          tech="HTML, CSS, JavaScript, Fetch API"
+          imgUrl="country.png"
+          theme={theme}
+          liveLink="https://ajaycountry.vercel.app/"
+          gitLink="https://github.com/ajayGodara0001/country"
+        />
+        <Project
+          pName="Booking Website"
+          pInfo="Here we book a room for a night stay and add a review for it and list our own hotel."
+          tech="JavaScript, Mongoose, Express, EJS Template, Tailwind"
+          imgUrl="home.png"
+          theme={theme}
+          liveLink="https://home-site-xpta.onrender.com/"
+          gitLink="https://github.com/ajayGodara0001/Home-Site"
+        />
 
-        {/* Tech Stack */}
-        <div className='pt-1 text-sm text-gray-500 flex flex-wrap'>
-          {tech.split(',').map((item, index) => (
-            <span key={index} className='mr-2 mb-1 px-2 py-1 bg-gray-200 rounded-xl text-gray-700 text-xs'>{item.trim()}</span>
-          ))}
-        </div>
-
-        {/* Live and GitHub Links */}
-        <div className='mt-4 flex justify-between'>
-          <a target='_blank' href={liveLink} rel="noopener noreferrer" className='flex-1 mr-2'>
-            <button className='w-full bg-blue-500 text-white py-2 rounded-xl hover:bg-blue-600 transition-colors'>Live Link</button>
-          </a>
-          <a target='_blank' href={gitLink} rel="noopener noreferrer" className='flex-1 ml-2'>
-            <button className='w-full bg-gray-700 text-white py-2 rounded-xl hover:bg-gray-800 transition-colors'>Github Link</button>
-          </a>
-        </div>
       </div>
+     
     </div>
   );
 }
 
-export default Project;
+export default Projects;
